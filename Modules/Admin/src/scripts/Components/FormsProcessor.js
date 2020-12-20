@@ -15,7 +15,6 @@ class FormsProcessor extends _AbstractFormProcessor {
             e.preventDefault()
             this.flags = []
             const collection = this.formFieldsCollect(form)
-            debugger
             this.formValidator(collection)
             if (this.flags.every(val => val)) {
                 form.setAttribute('enctype','multipart/form-data')
