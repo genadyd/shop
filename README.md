@@ -1,4 +1,5 @@
-## Shop prject
+## Shop prject 
+(the project is not finished)
 
 ## Use tehnologies
  1.PHP 8.0
