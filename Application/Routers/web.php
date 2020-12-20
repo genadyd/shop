@@ -40,7 +40,7 @@ $router->get('/categories/delete/{id}',"Categories\CategoriesController:delete")
 /* products */
 $router->get('/products',"Products\ProductsController:index");
 $router->get('/products/add',"Products\ProductsController:add");
-$router->post('/categories/add',"Products\ProductsController:add_form");
+$router->post('/products/add',"Products\ProductsController:add_form");
 $router->get('/products/edit/{id}',"Products\ProductsController:edit");
 $router->post('/products/edit_form/{id}',"Products\ProductsController:edit_form");
 $router->get('/products/delete/{id}',"Products\ProductsController:delete");

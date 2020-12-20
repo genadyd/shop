@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="/Modules/Admin/src/styles/products/product_form_module.css">
-<h4 class="brands_headding">Brands</h4>
+<h3 class="brands_heading">Brands</h3>
 <div class="brands_component">
 
     <?php foreach($brands as $brand):?>
@@ -13,11 +13,12 @@
     </div>
     <?php endforeach; ?>
 </div>
+<h3 class="category_heading">Categories</h3>
 <div class="categories_component">
     <?php foreach($categories as $category):?>
-        <div class="brand_card" data-id="<?= $category['id'] ?>">
+        <div class="category_card" data-id="<?= $category['id'] ?>">
             <div class="category_name">
-                <span><?=$category['category_name'] ?></span>
+                <h4><?=$category['category_name'] ?></h4>
             </div>
             <div class="category_description">
                 <p><?=$category['category_description'] ?></p>

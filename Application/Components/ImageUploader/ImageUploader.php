@@ -25,6 +25,7 @@ class ImageUploader
           if( move_uploaded_file($this->file["tmp_name"], $target_file)){
               return $target_file;
           }
+
           return $target_file;
     }
 

@@ -9,6 +9,8 @@
 
 namespace Admin\Products;
 use Admin\ControllersInterface\AdminControllersInterface;
+use Images\ImageUploader;
+
 //use Images\ImageUploader;
 require_once 'Application/Interfaces/AdminControllersInterface.php';
 require_once 'Modules/Admin/Products/ProductsFormBuilder.php';
@@ -58,7 +60,12 @@ class ProductsController implements AdminControllersInterface
 
     public function add_form(array $params): void
     {
-        // TODO: Implement add_form() method.
+        if(!$this->checkForm($params['crypt'])) return;
+        $uploader = new ImageUploader($_FILES['product_image'],'files/products/');
+        $file_path = ($uploader->fileDataSave())? '/'.$uploader->fileDataSave():null;
+        if($this->model->add($params, $file_path)){
+            header('Location:/admin/products');
+        }
     }
 
     public function edit(array $params): void

@@ -22,9 +22,29 @@ class ProductsModel implements \Admin\ModelsInterface\AdminModelsInterface
         $this->db = $conn->connection();
     }
 
-    public function add(string $brand_name, string $brand_logo): int
+    public function add($params, string $product_image): int
     {
-        // TODO: Implement add() method.
+        $query = "INSERT INTO products (product_name, product_description, product_image, brand_id, category_id, quantity, price)
+VALUES (:NAME, :DESCRIPTION, :IMAGE, :BRAND, :CATEGORY, :QUANTITY, :PRICE)";
+        $product_name = htmlspecialchars($params['product_name']);
+        $product_description = htmlspecialchars($params['product_description']);
+        $product_quantity = (int)htmlspecialchars($params['product_quantity']);
+        $product_price = (int)htmlspecialchars($params['product_price']);
+        $brand = (int)htmlspecialchars($params['brand'])??0;
+        $category = (int)htmlspecialchars($params['category'])??0;
+        $product_image = htmlspecialchars($product_image);
+        $st = $this->db->prepare($query);
+        $st->bindParam(':NAME', $product_name, \PDO::PARAM_STR);
+        $st->bindParam(':DESCRIPTION', $product_description, \PDO::PARAM_STR);
+        $st->bindParam(':BRAND', $brand, \PDO::PARAM_INT);
+        $st->bindParam(':CATEGORY', $category, \PDO::PARAM_INT);
+        $st->bindParam(':QUANTITY', $product_quantity, \PDO::PARAM_INT);
+        $st->bindParam(':PRICE', $product_price, \PDO::PARAM_INT);
+        $st->bindParam(':IMAGE', $product_image, \PDO::PARAM_STR);
+        if ($st->execute()) {
+            return $this->db->lastInsertId();
+        }
+        return false;
     }
 
     public function getAll(): array

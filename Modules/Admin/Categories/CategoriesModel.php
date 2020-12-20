@@ -23,7 +23,7 @@ class CategoriesModel implements AdminModelsInterface
         $this->db = $conn->connection();
     }
 
-    public function add(string $category_name, string $category_description): int
+    public function add($category_name, string $category_description): int
     {
         $query = "INSERT INTO categories (category_name, category_description) VALUES (:NAME, :DESCRIPTION)";
         $category_name = htmlspecialchars($category_name);
