@@ -1,50 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fd792afe-6b6b-4d5c-9a35-2e3e50c07de2" name="Default Changelist" comment="new product add">
+    <list default="true" id="fd792afe-6b6b-4d5c-9a35-2e3e50c07de2" name="Default Changelist" comment="remove debugger">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Admin/src/scripts/Components/ProductFormProcessor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/brands/1_LJpmb-lFtcDKxoJfM2V4Qg.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/files/brands/1_LJpmb-lFtcDKxoJfM2V4Qg.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/brands/626318_18890615_3432901_93abf024_image.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/files/brands/626318_18890615_3432901_93abf024_image.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/brands/8bf492937026a79f79270146e1435158.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/files/brands/8bf492937026a79f79270146e1435158.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/brands/eafe641fbff579d71a78bbdf02d02541.png" beforeDir="false" afterPath="$PROJECT_DIR$/files/brands/eafe641fbff579d71a78bbdf02d02541.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/brands/images.png" beforeDir="false" afterPath="$PROJECT_DIR$/files/brands/images.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/brands/modern-logo-design9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/files/brands/modern-logo-design9.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/brands/preview-xl.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/files/brands/preview-xl.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/brands/prozrachniy-logo-1-800x575.png" beforeDir="false" afterPath="$PROJECT_DIR$/files/brands/prozrachniy-logo-1-800x575.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/autoload.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/router/CONTRIBUTING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/router/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/router/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/router/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/router/exemple/controller/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/router/exemple/controller/Test/Coffee.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/router/exemple/controller/Test/Name.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/router/exemple/controller/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/router/exemple/spoofing/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/router/exemple/spoofing/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/router/src/Dispatch.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/router/src/Router.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/coffeecode/router/src/RouterTrait.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/funkybunch/simple-http-router/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/funkybunch/simple-http-router/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/funkybunch/simple-http-router/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/funkybunch/simple-http-router/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/funkybunch/simple-http-router/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/funkybunch/simple-http-router/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/funkybunch/simple-http-router/phpunit.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/funkybunch/simple-http-router/src/HTTPErrors.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/funkybunch/simple-http-router/src/Request.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/funkybunch/simple-http-router/src/Router.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/funkybunch/simple-http-router/tests/RouterTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Admin/Products/ProductsFormBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Products/ProductsFormBuilder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Admin/Products/ProductsModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Products/ProductsModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Admin/src/styles/products/products.css" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/src/styles/products/products.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Admin/src/styles/products/products.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/src/styles/products/products.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Admin/src/styles/products/products.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/src/styles/products/products.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Admin/views/content/product_component.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/views/content/product_component.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +31,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/README.md" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -127,7 +95,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608091826978</updated>
       <workItem from="1608091830206" duration="45894000" />
-      <workItem from="1608459835786" duration="7615000" />
+      <workItem from="1608459835786" duration="12659000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1608460085933</created>
@@ -143,7 +111,21 @@
       <option name="project" value="LOCAL" />
       <updated>1608467033692</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="new product add2">
+      <created>1608467524394</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1608467524394</updated>
+    </task>
+    <task id="LOCAL-00004" summary="remove debugger">
+      <created>1608468200171</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1608468200171</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +134,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="new product add" />
-    <option name="LAST_COMMIT_MESSAGE" value="new product add" />
+    <MESSAGE value="new product add2" />
+    <MESSAGE value="remove debugger" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove debugger" />
   </component>
 </project>

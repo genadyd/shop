@@ -24,8 +24,8 @@ class ProductsModel implements \Admin\ModelsInterface\AdminModelsInterface
 
     public function add($params, string $product_image): int
     {
-        $query = "INSERT INTO products (product_name, product_description, product_image, brand_id, category_id, quantity, price)
-VALUES (:NAME, :DESCRIPTION, :IMAGE, :BRAND, :CATEGORY, :QUANTITY, :PRICE)";
+        $query = "INSERT INTO products (product_name, product_description, product_image, brand_id, category_id, quantity, price, active)
+VALUES (:NAME, :DESCRIPTION, :IMAGE, :BRAND, :CATEGORY, :QUANTITY, :PRICE, :ACTIVE)";
         $product_name = htmlspecialchars($params['product_name']);
         $product_description = htmlspecialchars($params['product_description']);
         $product_quantity = (int)htmlspecialchars($params['product_quantity']);
@@ -33,6 +33,7 @@ VALUES (:NAME, :DESCRIPTION, :IMAGE, :BRAND, :CATEGORY, :QUANTITY, :PRICE)";
         $brand = (int)htmlspecialchars($params['brand'])??0;
         $category = (int)htmlspecialchars($params['category'])??0;
         $product_image = htmlspecialchars($product_image);
+        $active = $params['product_active'];
         $st = $this->db->prepare($query);
         $st->bindParam(':NAME', $product_name, \PDO::PARAM_STR);
         $st->bindParam(':DESCRIPTION', $product_description, \PDO::PARAM_STR);
@@ -41,6 +42,7 @@ VALUES (:NAME, :DESCRIPTION, :IMAGE, :BRAND, :CATEGORY, :QUANTITY, :PRICE)";
         $st->bindParam(':QUANTITY', $product_quantity, \PDO::PARAM_INT);
         $st->bindParam(':PRICE', $product_price, \PDO::PARAM_INT);
         $st->bindParam(':IMAGE', $product_image, \PDO::PARAM_STR);
+        $st->bindParam(':ACTIVE', $active, \PDO::PARAM_BOOL);
         if ($st->execute()) {
             return $this->db->lastInsertId();
         }
