@@ -30,7 +30,7 @@
 common components: Application/
  traits:Aplication/Traites
  router:Application/Routers
-===============================
+
 Uploaded files in /files/brands and /files/products
 ==========================================
 ## JS 
