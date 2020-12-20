@@ -1,0 +1,50 @@
+#float_menu_container{
+  position: fixed;
+  height: calc(100vh - 60px);
+  width: 100%;
+  padding: 15px;
+  background-color: #fff;
+  left:100%;
+  box-shadow:none;
+  transition: left 500ms, box-shadow 800ms;
+  &.open{
+    left: 0;
+    box-shadow: -2px 8px 6px 3px #9b9b9b;
+  }
+  .float_menu_header{
+    .heading{
+      margin: 0;
+      text-decoration: underline;
+    }
+  }
+  .float_menu_body{
+    .list{
+      list-style: none;
+      padding: 0;
+      li{
+        height: 40px;
+        border-bottom: solid 1px #555555;
+        display: flex;
+        align-items: center;
+        a{
+          text-decoration: none;
+          color: #3e3e3e;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 480px) {
+  #float_menu_container{
+    width: 360px;
+    &.open{
+      left: calc(100% - 360px);
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  #float_menu_container{
+    display: none;
+
+  }
+}

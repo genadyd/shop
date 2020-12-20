@@ -1,0 +1,114 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "0e02341833d7ead55530940562e74e57",
+    "packages": [
+        {
+            "name": "coffeecode/router",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/robsonvleite/router.git",
+                "reference": "00341865557d75f9717100562de40b5cd178c1e8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/robsonvleite/router/zipball/00341865557d75f9717100562de40b5cd178c1e8",
+                "reference": "00341865557d75f9717100562de40b5cd178c1e8",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "CoffeeCode\\Router\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Robson V. Leite",
+                    "email": "cursos@upinside.com.br",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A classic CoffeeCode Router is easy, fast and extremely uncomplicated. Create and manage your routes in minutes!",
+            "homepage": "http://www.upinside.com.br",
+            "keywords": [
+                "Coffeecode",
+                "route",
+                "router",
+                "routes",
+                "upinside"
+            ],
+            "time": "2020-06-29T15:55:42+00:00"
+        },
+        {
+            "name": "funkybunch/simple-http-router",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/funkybunch/Simple-HTTP-Router.git",
+                "reference": "4418cd930f106adb076d783505aee46737db3efe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/funkybunch/Simple-HTTP-Router/zipball/4418cd930f106adb076d783505aee46737db3efe",
+                "reference": "4418cd930f106adb076d783505aee46737db3efe",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "6.*"
+            },
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "FunkyBunch\\SimpleHTTPRouter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Adkins",
+                    "email": "mark@kuipr.com"
+                }
+            ],
+            "description": "A simple HTTP router written in PHP.  Use this to better manage routing for APIs and server-side web routing.",
+            "keywords": [
+                "api",
+                "error",
+                "handler",
+                "route",
+                "router",
+                "server-side"
+            ],
+            "time": "2020-02-24T05:03:37+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "funkybunch/simple-http-router": 20,
+        "coffeecode/router": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
+}

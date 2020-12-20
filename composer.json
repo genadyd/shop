@@ -1,0 +1,16 @@
+{
+    "name": "genady/simple-shop2",
+    "description": "iintoo",
+    "type": "project",
+    "require": {
+        "coffeecode/router": "dev-master"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "genady",
+            "email": "jobgenady@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}

@@ -1,0 +1,41 @@
+.main_form{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  label{
+    margin-bottom: 1rem;
+  }
+  input{
+    //margin-bottom: 2rem;
+    height: 2.7rem;
+    &[type=text],&[type=submit]{
+      border: solid 1px #bebebe;
+      border-radius: 4px;
+      font-size: 1.1rem;
+      outline: none;
+      color: #5c5b5b;
+    }
+    &[type=submit]{
+      background-color: #95cbec;
+      box-shadow: 0 0 8px 2px #ada9a9;
+      margin-top: -2em;
+      &:hover{
+        background-color: #7eb0cd;
+        box-shadow: 0 0 4px 2px #ada9a9;
+        color: #fff;
+      }
+    }
+
+  }
+  .error_box{
+    height: 2rem;
+    color: red;
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main_form {
+    width: 400px;
+  }
+}

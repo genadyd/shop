@@ -1,0 +1,129 @@
+html, body {
+  font-family: 'Arial', serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  box-sizing: border-box; }
+
+.container {
+  width: 100vw;
+  min-height: 100vh; }
+  .container a {
+    text-decoration: none;
+    color: #3e3e3e; }
+  .container .header_bott {
+    height: 60px;
+    width: 100vw; }
+  .container #main_header {
+    height: 60px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #ebebeb;
+    padding: 0 15px;
+    box-sizing: border-box;
+    background-color: #fff; }
+    .container #main_header .header_content {
+      height: 100%;
+      width: 100%;
+      left: 0;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .container #main_header .header_content #deck_menu {
+        display: none; }
+  @media screen and (min-width: 768px) {
+    .container .header_bott {
+      height: 80px; }
+    .container #main_header {
+      height: 80px;
+      padding: 0 2em; }
+      .container #main_header .header_content .menu_button_area {
+        display: none; }
+      .container #main_header .header_content #deck_menu {
+        display: flex;
+        justify-content: flex-end;
+        width: 60%; }
+        .container #main_header .header_content #deck_menu .deck_menu_list {
+          list-style: none;
+          display: flex;
+          padding: 0; }
+          .container #main_header .header_content #deck_menu .deck_menu_list li {
+            margin-left: 2rem; } }
+  .container #float_menu_container {
+    position: fixed;
+    height: calc(100vh - 60px);
+    width: 100%;
+    padding: 15px;
+    background-color: #fff;
+    left: 100%;
+    box-shadow: none;
+    transition: left 500ms, box-shadow 800ms; }
+    .container #float_menu_container.open {
+      left: 0;
+      box-shadow: -2px 8px 6px 3px #9b9b9b; }
+    .container #float_menu_container .float_menu_header .heading {
+      margin: 0;
+      text-decoration: underline; }
+    .container #float_menu_container .float_menu_body .list {
+      list-style: none;
+      padding: 0; }
+      .container #float_menu_container .float_menu_body .list li {
+        height: 40px;
+        border-bottom: solid 1px #555555;
+        display: flex;
+        align-items: center; }
+        .container #float_menu_container .float_menu_body .list li a {
+          text-decoration: none;
+          color: #3e3e3e; }
+  @media screen and (min-width: 480px) {
+    .container #float_menu_container {
+      width: 360px; }
+      .container #float_menu_container.open {
+        left: calc(100% - 360px); } }
+  @media screen and (min-width: 768px) {
+    .container #float_menu_container {
+      display: none; } }
+  .container .content_container {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .container .content_container .main_form {
+      width: 80%;
+      display: flex;
+      flex-direction: column; }
+      .container .content_container .main_form label {
+        margin-bottom: 1rem; }
+      .container .content_container .main_form input {
+        height: 2.7rem; }
+        .container .content_container .main_form input[type=text], .container .content_container .main_form input[type=submit] {
+          border: solid 1px #bebebe;
+          border-radius: 4px;
+          font-size: 1.1rem;
+          outline: none;
+          color: #5c5b5b; }
+        .container .content_container .main_form input[type=submit] {
+          background-color: #95cbec;
+          box-shadow: 0 0 8px 2px #ada9a9;
+          margin-top: -2em; }
+          .container .content_container .main_form input[type=submit]:hover {
+            background-color: #7eb0cd;
+            box-shadow: 0 0 4px 2px #ada9a9;
+            color: #fff; }
+      .container .content_container .main_form .error_box {
+        height: 2rem;
+        color: red;
+        display: flex;
+        align-items: center; }
+    @media screen and (min-width: 768px) {
+      .container .content_container .main_form {
+        width: 400px; } }
+
+.container * {
+  box-sizing: border-box; }
+
+/*# sourceMappingURL=main.css.map */
