@@ -16,14 +16,14 @@ class FormsComponents implements FormsComponentsInterface
 {
    public function input(string $title, string $type, string $id, string $name,  $value = false,  $placeholder =false):string{
        $input ='';
-       if($type !== 'hidden' && $type !=='submit') {
+       if(!in_array($type, [ 'hidden','submit'])) {
            $input = '<label for="' . $id . '">' . $title . '</label>';
        }
        $input .= '<input type="'.$type.'" id="'.$id.'" name="'.$name.'"';
        $input.= $value?' value="'.$value.'"':'';
        $input.= $placeholder?' placeholder="'.$placeholder.'"':'';
        $input .='>';
-       if($type !== 'hidden' && $type !=='submit') {
+       if(!in_array($type, [ 'hidden', 'submit', 'checkbpx'])) {
            $input.='<div class="error_box"></div>';
        }
        return $input;
