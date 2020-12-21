@@ -26,7 +26,6 @@ class _AbstractFormProcessor{
             let value = input.value
             let id = input.id
             let { valid, message} = this.validator.valid(value,type)
-            debugger
             let elem = document.getElementById(id)
             if(!valid){
                 elem.nextSibling.innerText = message
