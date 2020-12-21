@@ -75,7 +75,7 @@ class ProductsController implements AdminControllersInterface
         $categories = $this->model->getCategories();
         if(isset($params['id'])){
             $product_data = $this->model->detOne((int)$params['id']);
-            $f= new ProductsFormBuilder(['id'=>'update_product','method'=>'POST','action'=>'/admin/products/edit']);
+            $f= new ProductsFormBuilder(['id'=>'update_product','method'=>'POST','action'=>'/admin/products/edit'],$product_data);
             $form = $f->build();
             ob_start();
             require_once 'Modules/Admin/views/content/product_brands_categories_component.php';

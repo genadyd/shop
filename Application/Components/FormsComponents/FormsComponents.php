@@ -22,6 +22,9 @@ class FormsComponents implements FormsComponentsInterface
        $input .= '<input type="'.$type.'" id="'.$id.'" name="'.$name.'"';
        $input.= $value?' value="'.$value.'"':'';
        $input.= $placeholder?' placeholder="'.$placeholder.'"':'';
+       if($type ==='checkbox'){
+           $input.='checked="'.$value.'"';
+       }
        $input .='>';
        if(!in_array($type, [ 'hidden', 'submit', 'checkbpx'])) {
            $input.='<div class="error_box"></div>';
@@ -33,7 +36,7 @@ class FormsComponents implements FormsComponentsInterface
         $input .= '<textarea id="'.$id.'" name="'.$name.'"';
         $input.= $value?' value="'.$value.'"':'';
         $input.= $placeholder?' placeholder="'.$placeholder.'"':'';
-        $input .='></textarea>';
+        $input .='>'.$value.'</textarea>';
         return $input;
     }
 

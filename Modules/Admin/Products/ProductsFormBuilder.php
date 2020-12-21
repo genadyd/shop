@@ -32,17 +32,18 @@ class ProductsFormBuilder implements ModuleFormBuilderInterface
 
     public function build()
     {
+
         $product_name =  $this->form_components_data['product_name']??false;
         $product_description =  $this->form_components_data['product_description']??false;
         $product_image = $this->form_components_data['product_image']??false;
-        $product_price = $this->form_components_data['product_price']??false;
-        $product_quantity = $this->form_components_data['product_quantity']??false;
+        $product_price = $this->form_components_data['price']??false;
+        $product_quantity = $this->form_components_data['quantity']??false;
         $product_brand = $this->form_components_data['brand_id']??false;
         $product_category = $this->form_components_data['category_id']??false;
         $active = $this->form_components_data['active']??true;
         $inputs = [
             $this->components->input('Product name', 'text','product_name','product_name',$product_name,'product name' ),
-            $this->components->textarea('Product description','product_description','product_description',$product_description,'product description' ),
+            $this->components->textarea('Product description','product_description','product_description', $product_description,'product description' ),
             $this->components->input('Product quantity', 'number','product_quantity','product_quantity',$product_quantity,'product quantity' ),
             $this->components->input('Product price', 'number','product_price','product_price',$product_price,'product price' ),
             $this->components->input('Product active', 'checkbox','product_active','product_active',$active ),

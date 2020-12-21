@@ -27,10 +27,12 @@ class _AbstractFormProcessor{
             let id = input.id
             let { valid, message} = this.validator.valid(value,type)
             let elem = document.getElementById(id)
-            if(!valid){
-                elem.nextSibling.innerText = message
-            }else{
-                elem.nextSibling.innerText = ''
+            if( elem.nextSibling) {
+                if (!valid) {
+                    elem.nextSibling.innerText = message
+                } else {
+                    elem.nextSibling.innerText = ''
+                }
             }
             this.flags.push(valid)
         })
