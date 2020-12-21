@@ -57,7 +57,11 @@ VALUES (:NAME, :DESCRIPTION, :IMAGE, :BRAND, :CATEGORY, :QUANTITY, :PRICE, :ACTI
 
     public function detOne(int $id): array
     {
-        // TODO: Implement detOne() method.
+        $query = "SELECT * FROM products WHERE id = :ID";
+        $st = $this->db->prepare($query);
+        $st->bindParam(':ID',$id, \PDO::PARAM_INT);
+        $st->execute();
+        return $st->fetch(\PDO::FETCH_ASSOC);
     }
 
     public function edit(int $id, string $name, string $file_path): int

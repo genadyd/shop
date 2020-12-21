@@ -18,7 +18,7 @@ class _AbstractFormProcessor{
     formFieldsCollect(form){
         const inputs = form.querySelectorAll('input')
         if(inputs.length>0)
-            return [...inputs].filter((input)=>['text','file','password','email', 'hidden'].includes( input.getAttribute('type')))
+            return [...inputs].filter((input)=>['text','file','number','password','email', 'hidden'].includes( input.getAttribute('type')))
     }
     formValidator(inputs){
         inputs.forEach(input => {
@@ -26,6 +26,7 @@ class _AbstractFormProcessor{
             let value = input.value
             let id = input.id
             let { valid, message} = this.validator.valid(value,type)
+            debugger
             let elem = document.getElementById(id)
             if(!valid){
                 elem.nextSibling.innerText = message

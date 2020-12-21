@@ -70,7 +70,20 @@ class ProductsController implements AdminControllersInterface
 
     public function edit(array $params): void
     {
-        // TODO: Implement edit() method.
+        if(!$this->isLogged()) header('Location: /admin/login');
+        $brands = $this->model->getBrands();
+        $categories = $this->model->getCategories();
+        if(isset($params['id'])){
+            $product_data = $this->model->detOne((int)$params['id']);
+            $f= new ProductsFormBuilder(['id'=>'update_product','method'=>'POST','action'=>'/admin/products/edit']);
+            $form = $f->build();
+            ob_start();
+            require_once 'Modules/Admin/views/content/product_brands_categories_component.php';
+            $content = ob_get_clean();
+            $component_name = 'edit';
+            $content .= $form;
+            require('Modules/Admin/views/layout/main_template.php');
+        }
     }
 
     public function edit_form(array $params): void

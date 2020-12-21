@@ -38,7 +38,7 @@ class Forms implements FormsInterface
         if(count($this->form_elements)>0){
             foreach ($this->form_elements as $form_component){
                 $form.=$form_component;
-                $form.='<div class="error_box"></div>';
+
             }
         }
         $form .= '</form>';

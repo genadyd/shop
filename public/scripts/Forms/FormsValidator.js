@@ -2,12 +2,15 @@ class FormsValidator {
     patterns = {
         email: /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/,
         password: /^[a-zA-Z\d]{4,}$/g,
-        text: /^[A-Za-z\s]+/
+        text: /^[A-Za-z\s]+/,
+        number:/^[\d]+/
     }
     messages = {
         email: "Cras a auctor justo",
         password: "Suspendisse vitae risus non turpis",
-        text: "Fusce sit amet laoreet nulla"
+        text: "Fusce sit amet laoreet nulla",
+        number:"Fusce sit laoreet nulla"
+
     }
 
     valid(val, type) {
