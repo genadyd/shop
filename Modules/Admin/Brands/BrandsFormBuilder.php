@@ -36,7 +36,7 @@ class BrandsFormBuilder implements ModuleFormBuilderInterface
       $brand_image = $this->form_components_data['brand_image']??false;
       $inputs = [
           $this->components->input('Brand name', 'text','brand_name','brand_name',$brand_name,'brand name' ),
-          $this->components->input('Brand logo', 'file','brand_logo','brand_logo',$brand_image ),
+          $this->components->input('Brand logo', 'file','brand_logo','brand_logo' ),
           $this->components->input('', 'hidden','crypt','crypt' ),
           $this->components->input('', 'submit','brand_submit','brand_submit','Submit' )
       ];

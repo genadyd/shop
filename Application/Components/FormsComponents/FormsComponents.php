@@ -22,8 +22,8 @@ class FormsComponents implements FormsComponentsInterface
        $input .= '<input type="'.$type.'" id="'.$id.'" name="'.$name.'"';
        $input.= $value?' value="'.$value.'"':'';
        $input.= $placeholder?' placeholder="'.$placeholder.'"':'';
-       if($type ==='checkbox'){
-           $input.='checked="'.$value.'"';
+       if($type ==='checkbox' && $value){
+           $input.='checked';
        }
        $input .='>';
        if(!in_array($type, [ 'hidden', 'submit', 'checkbpx'])) {

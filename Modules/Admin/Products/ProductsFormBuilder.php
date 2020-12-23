@@ -40,13 +40,13 @@ class ProductsFormBuilder implements ModuleFormBuilderInterface
         $product_quantity = $this->form_components_data['quantity']??false;
         $product_brand = $this->form_components_data['brand_id']??false;
         $product_category = $this->form_components_data['category_id']??false;
-        $active = $this->form_components_data['active']??true;
+        $active = $this->form_components_data['active']??false;
         $inputs = [
             $this->components->input('Product name', 'text','product_name','product_name',$product_name,'product name' ),
             $this->components->textarea('Product description','product_description','product_description', $product_description,'product description' ),
             $this->components->input('Product quantity', 'number','product_quantity','product_quantity',$product_quantity,'product quantity' ),
             $this->components->input('Product price', 'number','product_price','product_price',$product_price,'product price' ),
-            $this->components->input('Product active', 'checkbox','product_active','product_active',$active ),
+            $this->components->input('Product active', 'checkbox','product_active','product_active',(bool)$active ),
             $this->components->input('Product logo', 'file','product_image','product_image',$product_image ),
             $this->components->input('', 'hidden','brand','brand',$product_brand ),
             $this->components->input('', 'hidden','category','category',$product_category ),

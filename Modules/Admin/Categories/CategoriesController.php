@@ -55,7 +55,7 @@ class CategoriesController implements AdminControllersInterface
     public function add_form(array $params): void
     {
         if (!$this->checkForm($params['crypt'])) return;
-        if ($this->model->add($params['category_name'], $params['category_description'])) {
+        if ($this->model->add($params)) {
             header('Location:/admin/categories');
         }
     }
@@ -77,7 +77,7 @@ class CategoriesController implements AdminControllersInterface
     {
         if (!$this->checkForm($params['crypt'])) return;
         if (isset($params['id'])) {
-            if ($this->model->edit($params['id'], $params['category_name'], $params['category_description']) === 0) {
+            if ($this->model->edit($params) === 0) {
                 header('Location:/admin/categories');
             }
         }

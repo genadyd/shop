@@ -23,11 +23,11 @@ class CategoriesModel implements AdminModelsInterface
         $this->db = $conn->connection();
     }
 
-    public function add($category_name, string $category_description): int
+    public function add(array $params): int
     {
         $query = "INSERT INTO categories (category_name, category_description) VALUES (:NAME, :DESCRIPTION)";
-        $category_name = htmlspecialchars($category_name);
-        $category_description = htmlspecialchars($category_description);
+        $category_name = htmlspecialchars($params['category_name']);
+        $category_description = htmlspecialchars($params['category_description']);
         $st = $this->db->prepare($query);
         $st->bindParam(':NAME', $category_name, \PDO::PARAM_STR);
         $st->bindParam(':DESCRIPTION', $category_description, \PDO::PARAM_STR);
@@ -52,10 +52,11 @@ class CategoriesModel implements AdminModelsInterface
         return $st->fetch(\PDO::FETCH_ASSOC);
     }
 
-    public function edit(int $id, string $name, string $description): int
+    public function edit($params): int
     {
-        $name = htmlspecialchars($name);
-        $description  = htmlspecialchars($description);
+        $name = htmlspecialchars($params['category_name']);
+        $description  = htmlspecialchars($params['category_description']);
+        $id = (int)$params['id'];
             $query = "UPDATE categories SET category_name = :NAME, category_description = :DESCRIPTION WHERE id = :ID ";
             $st = $this->db->prepare($query);
             $st->bindParam(':DESCRIPTION', $description, \PDO::PARAM_STR);

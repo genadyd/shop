@@ -60,10 +60,11 @@ class ProductsController implements AdminControllersInterface
 
     public function add_form(array $params): void
     {
+
         if(!$this->checkForm($params['crypt'])) return;
         $uploader = new ImageUploader($_FILES['product_image'],'files/products/');
-        $file_path = ($uploader->fileDataSave())? '/'.$uploader->fileDataSave():null;
-        if($this->model->add($params, $file_path)){
+        $params['file_path'] = ($uploader->fileDataSave())? '/'.$uploader->fileDataSave():null;
+        if($this->model->add($params)){
             header('Location:/admin/products');
         }
     }
@@ -75,7 +76,7 @@ class ProductsController implements AdminControllersInterface
         $categories = $this->model->getCategories();
         if(isset($params['id'])){
             $product_data = $this->model->detOne((int)$params['id']);
-            $f= new ProductsFormBuilder(['id'=>'update_product','method'=>'POST','action'=>'/admin/products/edit'],$product_data);
+            $f= new ProductsFormBuilder(['id'=>'update_product','method'=>'POST','action'=>'/admin/products/edit_form/'.$params['id']],$product_data);
             $form = $f->build();
             ob_start();
             require_once 'Modules/Admin/views/content/product_brands_categories_component.php';
@@ -88,6 +89,18 @@ class ProductsController implements AdminControllersInterface
 
     public function edit_form(array $params): void
     {
-        // TODO: Implement edit_form() method.
+
+        if(!$this->checkForm($params['crypt'])) return;
+        if(isset($params['id'])){
+            $file_path = '';
+            if(isset($_FILES['product_image']) && $_FILES['product_image']['name']){
+                $uploader = new ImageUploader($_FILES['product_image'],'files/products/');
+                $file_path = ($uploader->fileDataSave())? '/'.$uploader->fileDataSave():null;
+            }
+            $params['file_path'] = $file_path;
+            if($this->model->edit($params)===0){
+                header('Location:/admin/products');
+            }
+        }
     }
 }

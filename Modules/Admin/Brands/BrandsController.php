@@ -59,7 +59,8 @@ class BrandsController implements AdminControllersInterface
         if(!$this->checkForm($params['crypt'])) return;
         $uploader = new ImageUploader($_FILES['brand_logo'],'files/brands/');
         $file_path = ($uploader->fileDataSave())? '/'.$uploader->fileDataSave():null;
-        if($this->model->add($params['brand_name'], $file_path)){
+        $params['file_path'] = $file_path;
+        if($this->model->add($params)){
             header('Location:/admin/brands');
         }
     }
@@ -86,7 +87,8 @@ class BrandsController implements AdminControllersInterface
                 $uploader = new ImageUploader($_FILES['brand_logo'],'files/brands/');
                 $file_path = ($uploader->fileDataSave())? '/'.$uploader->fileDataSave():null;
             }
-            if($this->model->edit($params['id'], $params['brand_name'], $file_path)===0){
+            $params['file_path'] = $file_path;
+            if($this->model->edit($params)==1){
                 header('Location:/admin/brands');
             }
         }
