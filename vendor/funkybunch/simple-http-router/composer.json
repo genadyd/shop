@@ -1,0 +1,24 @@
+{
+  "name": "funkybunch/simple-http-router",
+  "description": "A simple HTTP router written in PHP.  Use this to better manage routing for APIs and server-side web routing.",
+  "keywords": ["router", "route", "server-side", "api", "error", "handler"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mark Adkins",
+      "email": "mark@kuipr.com"
+    }
+  ],
+  "type": "project",
+  "require": {
+    "php": ">=7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "6.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "FunkyBunch\\SimpleHTTPRouter\\": "src/"
+    }
+  }
+}
