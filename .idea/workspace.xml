@@ -1,24 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fd792afe-6b6b-4d5c-9a35-2e3e50c07de2" name="Default Changelist" comment=" product edit form show display data">
+    <list default="true" id="fd792afe-6b6b-4d5c-9a35-2e3e50c07de2" name="Default Changelist" comment="edit and save elements refactoring and improve">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Components/FormsComponents/FormsComponents.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Components/FormsComponents/FormsComponents.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Interfaces/AdminModelsInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Interfaces/AdminModelsInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Admin/Brands/BrandsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Brands/BrandsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Admin/Brands/BrandsFormBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Brands/BrandsFormBuilder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Admin/Brands/BrandsModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Brands/BrandsModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Admin/Categories/CategoriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Categories/CategoriesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Admin/Categories/CategoriesModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Categories/CategoriesModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Interfaces/AdminControllersInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Interfaces/AdminControllersInterface.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Modules/Admin/Products/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Products/ProductsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Admin/Products/ProductsFormBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Products/ProductsFormBuilder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Modules/Admin/Products/ProductsModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Products/ProductsModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Admin/src/styles/header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/src/styles/header/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Admin/src/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/src/styles/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Admin/src/styles/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/src/styles/main.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/brands/1_LJpmb-lFtcDKxoJfM2V4Qg.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/files/brands/1_LJpmb-lFtcDKxoJfM2V4Qg.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/brands/prozrachniy-logo-1-800x575.png" beforeDir="false" afterPath="$PROJECT_DIR$/files/brands/prozrachniy-logo-1-800x575.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +91,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608091826978</updated>
       <workItem from="1608091830206" duration="45894000" />
-      <workItem from="1608459835786" duration="39039000" />
+      <workItem from="1608459835786" duration="40501000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1608460085933</created>
@@ -197,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608558557916</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="edit and save elements refactoring and improve">
+      <created>1608737306892</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1608737306892</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,6 +206,7 @@
     <MESSAGE value="form style repair, add product edit form show" />
     <MESSAGE value="form style repair, add product edit form show, remove debugger" />
     <MESSAGE value=" product edit form show display data" />
-    <option name="LAST_COMMIT_MESSAGE" value=" product edit form show display data" />
+    <MESSAGE value="edit and save elements refactoring and improve" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit and save elements refactoring and improve" />
   </component>
 </project>

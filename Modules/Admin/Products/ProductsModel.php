@@ -99,7 +99,12 @@ VALUES (:NAME, :DESCRIPTION, :IMAGE, :BRAND, :CATEGORY, :QUANTITY, :PRICE, :ACTI
 
     public function delete(int $id): bool
     {
-        // TODO: Implement delete() method.
+        $query = "DELETE FROM products WHERE id = :ID";
+        $st = $this->db->prepare($query);
+        $st->bindParam(':ID',$id, \PDO::PARAM_INT);
+       return $st->execute();
+
+
     }
     public function getBrands(){
         $query = "SELECT * FROM brands";

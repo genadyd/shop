@@ -89,7 +89,6 @@ class ProductsController implements AdminControllersInterface
 
     public function edit_form(array $params): void
     {
-
         if(!$this->checkForm($params['crypt'])) return;
         if(isset($params['id'])){
             $file_path = '';
@@ -101,6 +100,11 @@ class ProductsController implements AdminControllersInterface
             if($this->model->edit($params)===0){
                 header('Location:/admin/products');
             }
+        }
+    }
+    public function delete(array $params):void{
+        if($this->model->delete((int)$params['id'])){
+            header('Location:/admin/products');
         }
     }
 }
