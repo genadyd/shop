@@ -10,9 +10,10 @@
 namespace Admin\Products;
 
 
+use Admin\ModelsInterface\AdminModelsInterface;
 use Db\Db;
 
-class ProductsModel implements \Admin\ModelsInterface\AdminModelsInterface
+class ProductsModel implements AdminModelsInterface
 {
     protected $db;
 

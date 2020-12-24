@@ -2,29 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd792afe-6b6b-4d5c-9a35-2e3e50c07de2" name="Default Changelist" comment="admin finish :)">
+      <change afterPath="$PROJECT_DIR$/Modules/Shop/Api/ApiController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Shop/Cart/CartController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Shop/Home/HomeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Shop/src/images/shop_logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Shop/src/images/shop_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Shop/src/scripts/scripts.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Shop/src/styles/components/header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Shop/src/styles/main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Shop/views/layout/header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Shop/views/layout/shop_main_template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/simple-shop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/simple-shop.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/brands/239f25ebea624891b10547eb85b6fa57.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/brands/626318_18890615_3432901_93abf024_image.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/brands/8bf492937026a79f79270146e1435158.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/brands/cristina-matos-albers-Ltv7a5m8i4c-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/brands/dan-gold-m-u31puVzMQ-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/brands/eafe641fbff579d71a78bbdf02d02541.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/brands/eniko-kis-KsLPTsYaqIQ-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/brands/giorgio-trovato-p0OlRAAYXLY-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/brands/images.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/brands/images.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/brands/modern-logo-design9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/brands/preview-xl.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/brands/prozrachniy-logo-1-800x575.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/brands/rachit-tank-2cFZ_FB08UM-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/products/1_LJpmb-lFtcDKxoJfM2V4Qg.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/products/cristina-matos-albers-Ltv7a5m8i4c-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/products/dan-gold-m-u31puVzMQ-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/products/eniko-kis-KsLPTsYaqIQ-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/products/giorgio-trovato-p0OlRAAYXLY-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/products/images.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/products/modern-logo-design9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/products/rachit-tank-2cFZ_FB08UM-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Routers/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Routers/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Admin/Products/ProductsModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Products/ProductsModel.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,13 +29,19 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="SCSS File" />
         <option value="TypeScript File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -67,13 +64,14 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="13.14.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="13.13.36" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Modules/Shop/src/images" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -86,19 +84,20 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/Admin/node_modules/typescript/lib" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Modules/Shop/src/images" />
       <recent name="$PROJECT_DIR$/Admin" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Modules/Shop/views/layout" />
       <recent name="$PROJECT_DIR$/Admin/src/scripts/Login" />
       <recent name="$PROJECT_DIR$/Application/Components" />
       <recent name="$PROJECT_DIR$/Admin/Controllers" />
       <recent name="$PROJECT_DIR$/Admin" />
-      <recent name="$PROJECT_DIR$/Admin/src/scripts" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -110,7 +109,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608091826978</updated>
       <workItem from="1608091830206" duration="45894000" />
-      <workItem from="1608459835786" duration="41579000" />
+      <workItem from="1608459835786" duration="53656000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1608460085933</created>
@@ -224,11 +223,23 @@
       <option name="project" value="LOCAL" />
       <updated>1608738834139</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="admin finish :)">
+      <created>1608740545292</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1608740545292</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/Modules/Shop/src/scripts/scripts.js" />
+      </list>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />

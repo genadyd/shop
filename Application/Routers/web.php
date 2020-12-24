@@ -8,13 +8,22 @@
 
 use CoffeeCode\Router\Router;
 
-$router = new Router("http://www.simple-shop2.loc");
+$router = new Router("http://www.simple-shop.loc");
+/*shop route*/
+require_once 'Modules/Shop/Home/HomeController.php';
+$router->namespace('Shop');
+$router->get('/',"Home\HomeController:index");
+
+// ============================================================
+
+
 /*admin routes*/
 require_once 'Modules/Admin/Home/HomeController.php';
 require_once 'Modules/Admin/Login/LoginController.php';
 require_once 'Modules/Admin/Brands/BrandsController.php';
 require_once 'Modules/Admin/Categories/CategoriesController.php';
 require_once 'Modules/Admin/Products/ProductsController.php';
+
 $router->group('admin')->namespace("Admin");
 
 $router->get('/',"HomeController:index");
