@@ -15,4 +15,8 @@ require_once 'vendor/autoload.php';
 // *  web routes
 // * */
 require_once 'Application/Routers/web.php';
+///*
+// *  api routes
+// * */
+require_once 'Application/Routers/api.php';
 

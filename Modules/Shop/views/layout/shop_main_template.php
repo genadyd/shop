@@ -18,6 +18,6 @@
 
 </div>
 
- <script src="/Modules/Shop/src/dist/scripts.js"></script>
+ <script type="module" src="/Modules/Shop/src/dist/scripts.js"></script>
 </body>
 </html>

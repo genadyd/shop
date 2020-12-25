@@ -3,7 +3,8 @@
     "description": "iintoo",
     "type": "project",
     "require": {
-        "coffeecode/router": "dev-master"
+        "coffeecode/router": "dev-master",
+      "ext-json": "*"
     },
     "license": "MIT",
     "authors": [

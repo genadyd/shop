@@ -16,7 +16,7 @@ class Db
     public function connection(): \PDO
     {
         $conn='';
-  require_once 'Application/config.php';
+  require 'Application/config.php';
         try {
             /** @var  $host */
             /** @var  $db_name */

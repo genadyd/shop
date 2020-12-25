@@ -1,4 +1,4 @@
-import _AbstractFormProcessor from "../../../../../public/scripts/Forms/_AbstractFormProcessor.js";
+import _AbstractFormProcessor from "../../../public/scripts/Forms/_AbstractFormProcessor.js";
 
 class LoginFormProcessor extends _AbstractFormProcessor{
     constructor(api, validator) {

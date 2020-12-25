@@ -5,8 +5,8 @@ menu open close
 floatMenuOpenClose()
 
 import FormProcessor from "./Components/FormsProcessor.js"
-import Api from "/public/scripts/Api/Api.js"
-import FormsValidator from "/public/scripts/Forms/FormsValidator.js";
+import Api from "/Modules/Admin/public/scripts/Api/Api.js"
+import FormsValidator from "/Modules/Admin/public/scripts/Forms/FormsValidator.js";
 import {brandDelete} from "./Components/deleteItems.js";
 
 
