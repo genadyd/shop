@@ -16,6 +16,7 @@ class HomeController
     {
         ob_start();
           require_once 'Modules/Shop/views/components/shop_brands_area.php';
+          require_once 'Modules/Shop/views/components/shop_categories_area.php';
         $content = ob_get_clean();
         require_once 'Modules/Shop/views/layout/shop_main_template.php';
     }

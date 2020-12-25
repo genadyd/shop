@@ -5,5 +5,9 @@ html, body{
   box-sizing: border-box;
   .container{
     @import "components/header";
+    .content_container{
+      @import "components/brands_container";
+      @import "components/categories_container";
+    }
   }
 }

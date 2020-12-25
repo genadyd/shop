@@ -1,0 +1,29 @@
+.categories_heading{
+  text-align: center;
+  margin: 1rem 0 0;
+}
+.categories_area{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: .5rem;
+  .one_category{
+    width:max-content;
+    height: 30px;
+    border: solid 1px #0034bb;
+    border-radius: 4px;
+    margin: 0.4rem 1rem;
+    background-color: #0048fd;
+    color: #fff;
+    box-shadow: 0 0 9px 3px #9e9e9e;
+    padding: 0 1rem;
+    .category_title_area{
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      line-height: 30px;
+      font-size: 0.8rem;
+    }
+  }
+}

@@ -2,7 +2,7 @@ import {state} from "./Ship/State/state.js";
 import Api from "./Ship/Api/Api.js";
 import StateRepository from "./Ship/StateManager/StateRepository.js";
 import StateCreator from "./Ship/StateManager/StateCreator.js";
-import {brandsRenderCollback} from "./Modules/ShopModule/RenderCollbacks/rendersCollbacks.js";
+import {brandsRenderCallback, categoriesRenderCallback} from "./Modules/ShopModule/RenderCollbacks/rendersCallbacks.js";
 
 class ShopServiceController{
     private state:StateInterface = state
@@ -23,7 +23,7 @@ class ShopServiceController{
       /*map*/
       let brandsMap:any ={}
       promise.brands.forEach(( val:any, index:number)=>{brandsMap[val.id]=index})
-      this.repository.setStateElement('brandsMap',brandsMap, brandsRenderCollback)
+      this.repository.setStateElement('brandsMap',brandsMap, brandsRenderCallback)
       /*---*/
        this.repository.setStateElement('products',promise.products)
       /*map*/
@@ -35,7 +35,7 @@ class ShopServiceController{
       /*map*/
       let categoriesMap:any ={}
       promise.categories.forEach(( val:any, index:number)=>{categoriesMap[val.id]=index})
-      this.repository.setStateElement('categoriesMap',categoriesMap)
+      this.repository.setStateElement('categoriesMap',categoriesMap, categoriesRenderCallback)
       /*-----*/
    }
 }
