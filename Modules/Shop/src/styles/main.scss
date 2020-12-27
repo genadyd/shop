@@ -8,6 +8,7 @@ html, body{
     .content_container{
       @import "components/brands_container";
       @import "components/categories_container";
+      @import "components/products_container";
     }
   }
 }

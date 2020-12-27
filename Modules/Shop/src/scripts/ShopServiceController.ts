@@ -2,7 +2,11 @@ import {state} from "./Ship/State/state.js";
 import Api from "./Ship/Api/Api.js";
 import StateRepository from "./Ship/StateManager/StateRepository.js";
 import StateCreator from "./Ship/StateManager/StateCreator.js";
-import {brandsRenderCallback, categoriesRenderCallback} from "./Modules/ShopModule/RenderCollbacks/rendersCallbacks.js";
+import {
+    brandsRenderCallback,
+    categoriesRenderCallback,
+    productsListRender
+} from "./Modules/ShopModule/RenderCollbacks/rendersCallbacks.js";
 
 class ShopServiceController{
     private state:StateInterface = state
@@ -29,7 +33,7 @@ class ShopServiceController{
       /*map*/
       let productsMap:any ={}
       promise.products.forEach(( val:any, index:number)=>{productsMap[val.id]=index})
-      this.repository.setStateElement('productsMap',productsMap)
+      this.repository.setStateElement('productsMap',productsMap, productsListRender)
       /*----*/
        this.repository.setStateElement('categories',promise.categories, /*callback*/)
       /*map*/

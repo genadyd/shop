@@ -1,0 +1,32 @@
+.products_area{
+   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  .one_product{
+    width: 320px;
+    height: 600px;
+    overflow: hidden;
+    margin: 0 1rem 1rem;
+    border: solid 1px #bebebe;
+    display: flex;
+    flex-direction: column;
+    .product_title_area{
+      max-height: 100px;
+      min-height: 50px;
+      text-align: start;
+      padding: 1rem;
+      font-size: 1.3rem;
+    }
+    .product_image_area{
+      height: 150px;
+      img{
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .product_description_area{
+      min-height: 150px;
+      padding: 1rem;
+    }
+  }
+}
